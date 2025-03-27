@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -110,7 +110,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "balance",
 						"type": "uint256"
 					}
 				],
@@ -172,7 +172,7 @@
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "owner",
 						"type": "address"
 					}
 				],
@@ -252,7 +252,7 @@
 				"inputs": [
 					{
 						"internalType": "bytes4",
-						"name": "interfaceID",
+						"name": "interfaceId",
 						"type": "bytes4"
 					}
 				],
@@ -292,8 +292,13 @@
 			}
 		],
 		"devdoc": {
+			"details": "ERC721标准接口.",
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -306,7 +311,7 @@
 		"compilationTarget": {
 			"contracts/ERC721/IERC721.sol": "IERC721"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -318,12 +323,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ERC721/IERC721.sol": {
-			"keccak256": "0x1c1b04397bdd4127401c9ba767d973b03d6a8ece86f1a0d87ee931dac670a25a",
+		"contracts/ERC721/IERC165.sol": {
+			"keccak256": "0x9a8f9c7be8955609b5252161f118bc8a4640bb8ee82e287e6486e5ca21bf1ab5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c63c88c7748c747b989a706fb93d839abc15330fdbdd81542774ed4470fd85cf",
-				"dweb:/ipfs/Qmb2sTGzo8rzbxRFSG6Pxj49FYkYZMSxXwDhysXasE9zFJ"
+				"bzz-raw://2587358108ce107c79ad10f7b3f6172713087a5656197a4390dc1a594cb337de",
+				"dweb:/ipfs/QmRDAFxyyFVXnCMmL7Dx31fEYtrJvuhdZuSytPSTMofrAm"
+			]
+		},
+		"contracts/ERC721/IERC721.sol": {
+			"keccak256": "0x527118e4caab49b1fb83be7494f9db012e8233b3673938a3aadc8eefdc133e9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2ed996288dfeb028ea9c68a3ac518f6757ed1b019f7e4ae8f592112bd0d3a08a",
+				"dweb:/ipfs/QmTT6xBg2uY3rtLcPhoszrJ4Nx9qAwvomQ92qYVjwis8nE"
 			]
 		}
 	},

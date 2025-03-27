@@ -2,6 +2,8 @@
 pragma solidity ^0.8.4;
 
 import "./IERC721.sol";
+import "./IERC721Metadata.sol";
+import "./IERC721Receiver.sol";
 import "./Strings.sol"; // 請確保此檔案存在，或改用 OpenZeppelin 的實作
 
 contract ERC721 is IERC721, IERC721Metadata {
@@ -195,23 +197,6 @@ contract ERC721 is IERC721, IERC721Metadata {
     /*計算tokenURI的BaseURI，tpkenURI就是把baseURI和tokenId並接再一起，需要開發重寫*/
     function _baseURI() internal view virtual returns (string memory) {
         return "";
-    }
-
-}
-
-
-contract APE is ERC721{
-    uint public  MAX_APES = 10000;
-
-    constructor(string memory name_, string memory symbol_) ERC721(name_, symbol_){}
-
-    function _baseURI() internal pure override  returns (string memory) {
-        return "ipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq";
-    }
-    
-    function mint(address to, uint tokenId) external {
-        require(tokenId >= 0 && tokenId < MAX_APES, "tokenId out of range");
-        _mint(to, tokenId);
     }
 
 }

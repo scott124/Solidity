@@ -1,0 +1,369 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "List",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "Purchase",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Revoke",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "Update",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "list",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "nftList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "purchase",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "revoke",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC721/Nftmarket.sol": "NFTSwap"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC721/APE.sol": {
+			"keccak256": "0x49fdf432e344a89dbc880ffc683f4ce0f7bf75e393dc14dadeba845ab36dd279",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4011bde11e25ddf3d47ba6262c525374ea4c601278c603d063420e2f86b86d89",
+				"dweb:/ipfs/QmVAcAgAYiDK7KKC4rUdcmVSSJPT6pRT71JHhGTbSjfh8s"
+			]
+		},
+		"contracts/ERC721/ERC721.sol": {
+			"keccak256": "0x4c809df50b6de572cd7122f8298655368e83d3723890e4a1909d51eb0fa7bb1f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d8074b2cbd4edbf2767c7c9c904c61a95922cbf4b97a1fb8e2b3aef9b7e4616",
+				"dweb:/ipfs/Qmb8siUPUL8DGyw9G5c7gNqkByWDmrdGzKg44HxT8gYTYg"
+			]
+		},
+		"contracts/ERC721/IERC165.sol": {
+			"keccak256": "0x9a8f9c7be8955609b5252161f118bc8a4640bb8ee82e287e6486e5ca21bf1ab5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2587358108ce107c79ad10f7b3f6172713087a5656197a4390dc1a594cb337de",
+				"dweb:/ipfs/QmRDAFxyyFVXnCMmL7Dx31fEYtrJvuhdZuSytPSTMofrAm"
+			]
+		},
+		"contracts/ERC721/IERC721.sol": {
+			"keccak256": "0x527118e4caab49b1fb83be7494f9db012e8233b3673938a3aadc8eefdc133e9b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2ed996288dfeb028ea9c68a3ac518f6757ed1b019f7e4ae8f592112bd0d3a08a",
+				"dweb:/ipfs/QmTT6xBg2uY3rtLcPhoszrJ4Nx9qAwvomQ92qYVjwis8nE"
+			]
+		},
+		"contracts/ERC721/IERC721Metadata.sol": {
+			"keccak256": "0x098c0358661d09857ba84b64b96dad61565c225a66279ab562f4e02f6cae9594",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ffc289433c97eff7f28cc2f6e4efd5968a45310655da9228876562425cca7603",
+				"dweb:/ipfs/QmRLsCHbr2Teyu8uoVo2uvEU8SucYv5saNbYeMTFvbrpn4"
+			]
+		},
+		"contracts/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xfb8dbeffb1c3d37e69830fc67927244bb938ba220d1eacf51f5adc2394d6fe91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a3f2ae627794a5ed275bef00e73da66c1250775a99faa4cb01097f9fad17f4dd",
+				"dweb:/ipfs/QmNpU5eLRt8Sj5RzSX2ZGEZkXaN2h9RZzPjr5caFJe4kFn"
+			]
+		},
+		"contracts/ERC721/Nftmarket.sol": {
+			"keccak256": "0x89cf568206e08dd486b700ed91c4cfd177c9e879445f0129f84785e9cd571a4d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://06385ced36ca46db190afeab7bb9f42def9b5c632fcccc0b07f87edce647316c",
+				"dweb:/ipfs/Qmc44K8HujzTsvfsjvFtzbQhcU8FsGJt3e9pFBwKEH63Lq"
+			]
+		},
+		"contracts/ERC721/Strings.sol": {
+			"keccak256": "0x13372fee1e5dfe684344c3c80d064da29b53e50e8f7f149b4702ffa5758f6848",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9c2d37389dd54c6157a96c999fd979ce9defd79760857780d7660663194843c8",
+				"dweb:/ipfs/QmTvMqo7t1CMP1MpfMiQUEwYvDphEmdZoRSuM4pG3zYMha"
+			]
+		}
+	},
+	"version": 1
+}

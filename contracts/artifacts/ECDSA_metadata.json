@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/signature.sol": "ECDSA"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC721/ERC721.sol": {
+			"keccak256": "0x0a79b4689298d0efb8937920e1dc01efd18f33aaf59b5f52350f29cb8ed9eb6e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9148339c15342feeb5641311269fc677ab62171dc6f44baa257c8e1196036fba",
+				"dweb:/ipfs/QmQfrhN5sFiJzbEXnNcMXGsv8rphvCiZcjFm1DthBmXeR6"
+			]
+		},
+		"contracts/ERC721/IERC721.sol": {
+			"keccak256": "0x1c1b04397bdd4127401c9ba767d973b03d6a8ece86f1a0d87ee931dac670a25a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c63c88c7748c747b989a706fb93d839abc15330fdbdd81542774ed4470fd85cf",
+				"dweb:/ipfs/Qmb2sTGzo8rzbxRFSG6Pxj49FYkYZMSxXwDhysXasE9zFJ"
+			]
+		},
+		"contracts/ERC721/Strings.sol": {
+			"keccak256": "0x13372fee1e5dfe684344c3c80d064da29b53e50e8f7f149b4702ffa5758f6848",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9c2d37389dd54c6157a96c999fd979ce9defd79760857780d7660663194843c8",
+				"dweb:/ipfs/QmTvMqo7t1CMP1MpfMiQUEwYvDphEmdZoRSuM4pG3zYMha"
+			]
+		},
+		"contracts/signature.sol": {
+			"keccak256": "0xad57e39ab897dc444aaa612b8136cc27874334bad9736d88b8bef2ea4123ff50",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://643729f761c26e2065681ee5b787952f5cbf7bdb3f9eb675d952d2844b1daa9c",
+				"dweb:/ipfs/QmVbddpguxgS6AkJRTazHam7yd81jKbopB3DsbNFcve1Qo"
+			]
+		}
+	},
+	"version": 1
+}

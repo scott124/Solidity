@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.29+commit.ab55807c"
 	},
 	"language": "Solidity",
 	"output": {
@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "bytes4",
-						"name": "interfaceID",
+						"name": "interfaceId",
 						"type": "bytes4"
 					}
 				],
@@ -26,8 +26,13 @@
 			}
 		],
 		"devdoc": {
+			"details": "ERC165标准接口, 详见 https://eips.ethereum.org/EIPS/eip-165[EIP]. 合约可以声明支持的接口，供其他合约检查",
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "如果合约实现了查询的`interfaceId`，则返回true 规则详见：https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]"
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -38,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ERC721/IERC721.sol": "IERC165"
+			"contracts/ERC721/IERC165.sol": "IERC165"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -52,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ERC721/IERC721.sol": {
-			"keccak256": "0x1c1b04397bdd4127401c9ba767d973b03d6a8ece86f1a0d87ee931dac670a25a",
+		"contracts/ERC721/IERC165.sol": {
+			"keccak256": "0x9a8f9c7be8955609b5252161f118bc8a4640bb8ee82e287e6486e5ca21bf1ab5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c63c88c7748c747b989a706fb93d839abc15330fdbdd81542774ed4470fd85cf",
-				"dweb:/ipfs/Qmb2sTGzo8rzbxRFSG6Pxj49FYkYZMSxXwDhysXasE9zFJ"
+				"bzz-raw://2587358108ce107c79ad10f7b3f6172713087a5656197a4390dc1a594cb337de",
+				"dweb:/ipfs/QmRDAFxyyFVXnCMmL7Dx31fEYtrJvuhdZuSytPSTMofrAm"
 			]
 		}
 	},

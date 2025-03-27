@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.29+commit.ab55807c"
 	},
 	"language": "Solidity",
 	"output": {
@@ -422,19 +422,43 @@
 	},
 	"sources": {
 		"contracts/ERC721/ERC721.sol": {
-			"keccak256": "0x0a79b4689298d0efb8937920e1dc01efd18f33aaf59b5f52350f29cb8ed9eb6e",
+			"keccak256": "0x4c809df50b6de572cd7122f8298655368e83d3723890e4a1909d51eb0fa7bb1f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9148339c15342feeb5641311269fc677ab62171dc6f44baa257c8e1196036fba",
-				"dweb:/ipfs/QmQfrhN5sFiJzbEXnNcMXGsv8rphvCiZcjFm1DthBmXeR6"
+				"bzz-raw://6d8074b2cbd4edbf2767c7c9c904c61a95922cbf4b97a1fb8e2b3aef9b7e4616",
+				"dweb:/ipfs/Qmb8siUPUL8DGyw9G5c7gNqkByWDmrdGzKg44HxT8gYTYg"
+			]
+		},
+		"contracts/ERC721/IERC165.sol": {
+			"keccak256": "0x9a8f9c7be8955609b5252161f118bc8a4640bb8ee82e287e6486e5ca21bf1ab5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2587358108ce107c79ad10f7b3f6172713087a5656197a4390dc1a594cb337de",
+				"dweb:/ipfs/QmRDAFxyyFVXnCMmL7Dx31fEYtrJvuhdZuSytPSTMofrAm"
 			]
 		},
 		"contracts/ERC721/IERC721.sol": {
-			"keccak256": "0x1c1b04397bdd4127401c9ba767d973b03d6a8ece86f1a0d87ee931dac670a25a",
+			"keccak256": "0x527118e4caab49b1fb83be7494f9db012e8233b3673938a3aadc8eefdc133e9b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c63c88c7748c747b989a706fb93d839abc15330fdbdd81542774ed4470fd85cf",
-				"dweb:/ipfs/Qmb2sTGzo8rzbxRFSG6Pxj49FYkYZMSxXwDhysXasE9zFJ"
+				"bzz-raw://2ed996288dfeb028ea9c68a3ac518f6757ed1b019f7e4ae8f592112bd0d3a08a",
+				"dweb:/ipfs/QmTT6xBg2uY3rtLcPhoszrJ4Nx9qAwvomQ92qYVjwis8nE"
+			]
+		},
+		"contracts/ERC721/IERC721Metadata.sol": {
+			"keccak256": "0x098c0358661d09857ba84b64b96dad61565c225a66279ab562f4e02f6cae9594",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ffc289433c97eff7f28cc2f6e4efd5968a45310655da9228876562425cca7603",
+				"dweb:/ipfs/QmRLsCHbr2Teyu8uoVo2uvEU8SucYv5saNbYeMTFvbrpn4"
+			]
+		},
+		"contracts/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xfb8dbeffb1c3d37e69830fc67927244bb938ba220d1eacf51f5adc2394d6fe91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a3f2ae627794a5ed275bef00e73da66c1250775a99faa4cb01097f9fad17f4dd",
+				"dweb:/ipfs/QmNpU5eLRt8Sj5RzSX2ZGEZkXaN2h9RZzPjr5caFJe4kFn"
 			]
 		},
 		"contracts/ERC721/Strings.sol": {
